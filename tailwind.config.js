@@ -10,16 +10,16 @@ module.exports = {
         black: "#000",
         white: "#fff",
         input: "#cbcbcb",
-        "white-dark": "#f6f6f6"
+        "white-dark": "#f6f6f6",
       },
       backgroundColor: {
         main: "#fbfbfb",
-        section: 'linear-gradient(#ffb86e 42%, #d9d9d9 0%)'
+        section: "linear-gradient(#ffb86e 42%, #d9d9d9 0%)",
       },
       boxShadow: {
-        card: '0px 0px 30px 0px #00000026',
+        card: "0px 0px 30px 0px #00000026",
       },
     },
     plugins: [],
-  }
+  },
 }

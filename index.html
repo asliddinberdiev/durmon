@@ -3,27 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./*.{html,js}"],
+        theme: {
+          extend: {
+            fontFamily: {
+              Poppins: "Poppins",
+            },
+            colors: {
+              primary: "#ffb86e",
+              secondary: "#a3a3a3",
+              text: "#bd834b",
+              black: "#000",
+              white: "#fff",
+              input: "#cbcbcb",
+              "white-dark": "#f6f6f6",
+            },
+            backgroundColor: {
+              main: "#fbfbfb",
+              section: "linear-gradient(#ffb86e 42%, #d9d9d9 0%)",
+            },
+            boxShadow: {
+              card: "0px 0px 30px 0px #00000026",
+            },
+          },
+          plugins: [],
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        * {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+        }
+      }
+    </style>
+
+    <!-- swiper -->
+    <style>
+      swiper-container {
+        width: 100%;
+        height: calc(100% - 64px);
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
   </head>
   <body>
-    <header class="h-24 py-5 px-10 flex items-center">
-      <!-- logo -->
-      <img
-        src="/imgs/logo-durmon.png"
-        alt="durmon logo"
-        height="48"
-        class="object-cover h-12"
-      />
+    <header class="h-dvh w-full">
+      <!-- navbar -->
+      <nav class="h-16 py-5 px-10 xl:px-14 flex items-center justify-between">
+        <!-- logo -->
+        <a href="/">
+          <img
+            src="/imgs/logo-durmon.png"
+            alt="durmon logo"
+            height="40"
+            class="object-cover h-10"
+          />
+        </a>
 
-      <!-- nav links -->
-      <nav>
-        <ul>
-          <li>О проекте</li>
-          <li>ДОМА</li>
-          <li>Галерея</li>
-          <li>btns</li>
+        <!-- desktop menu -->
+        <ul
+          class="hidden md:flex items-center justify-between md:gap-x-14 lg:gap-x-16 xl:gap-x-24"
+        >
+          <li>
+            <a href="#" class="text-xl font-semibold uppercase text-text"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-xl font-semibold uppercase hover:text-text transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-xl font-semibold uppercase hover:text-text transition-colors"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <button
+              type="button"
+              class="bg-primary px-7 py-1.5 rounded-3xl font-medium hover:text-white transition-colors duration-300 ease-in-out"
+            >
+              Contact
+            </button>
+          </li>
         </ul>
+
+        <!-- mobile menu -->
+        <div
+          class="flex md:hidden flex-col w-8 gap-y-1.5 hover:cursor-pointer hover:gap-y-1 transition-all duration-300"
+        >
+          <span class="inline-block w-full py-0.5 bg-black"></span>
+          <span class="inline-block w-full py-0.5 bg-black"></span>
+          <span class="inline-block w-full py-0.5 bg-black"></span>
+        </div>
       </nav>
+
+      <!-- swiper carousel -->
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+        space-between="30"
+        loop="true"
+      >
+        <swiper-slide>
+          <img
+            src="./imgs/Park-and-Garden-Luxury-Apartments.png"
+            alt="Park and Garden Luxury Apartments"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            src="./imgs/Park-and-Garden-Luxury-Apartments2.png"
+            alt="Park and Garden Luxury Apartments"
+          />
+        </swiper-slide>
+      </swiper-container>
     </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

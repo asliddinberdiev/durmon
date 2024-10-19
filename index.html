@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,10 +30,11 @@
               white: "#fff",
               input: "#cbcbcb",
               "white-dark": "#f6f6f6",
-            },
-            backgroundColor: {
               main: "#fbfbfb",
-              section: "linear-gradient(#ffb86e 42%, #d9d9d9 0%)",
+            },
+            backgroundImage: {
+              section:
+                "linear-gradient(to right, rgba(255, 184, 110, 0.7) 42%, rgba(217, 217, 217, 0.7) 100%)",
             },
             boxShadow: {
               card: "0px 0px 30px 0px #00000026",
@@ -83,10 +84,12 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-main">
     <header class="h-dvh w-full">
       <!-- navbar -->
-      <nav class="h-16 py-5 px-2 md:px-10 xl:px-14 flex items-center justify-between">
+      <nav
+        class="h-16 py-5 px-2 md:px-10 xl:px-14 flex items-center justify-between"
+      >
         <!-- logo -->
         <a href="/">
           <img
@@ -163,6 +166,89 @@
         </swiper-slide>
       </swiper-container>
     </header>
+
+    <main
+      class="px-4 py-2 sm:px-12 sm:py-6 md:px-16 md:py-8 lg:px-20 lg:py-10 xl:px-24 xl:py-12"
+    >
+      <!-- projects -->
+      <section>
+        <!-- title -->
+        <h1
+          class="bg-section w-max py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-2 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        >
+          About the project
+        </h1>
+
+        <!-- cards -->
+        <div class="flex flex-col gap-y-8 sm:gap-y-16 md:gap-y-20 lg:gap-y-28  xl:gap-y-32">
+          <!-- card -->
+          <div class="flex justify-between flex-col md:flex-row bg-white">
+            <div
+              class="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex-1"
+            >
+              <img
+                src="./imgs/1-why-urban-parking-lots-are-becoming-parks 1.png"
+                alt="durmon"
+                width="350"
+                height="350"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-1 pt-3 md:pt-0 md:pl-16 flex flex-col justify-center"
+            >
+              <h2 class="font-bold text-3xl mb-1.5 md:mb-3 lg:mb-6 xl:mb-9">
+                Improvement and infrastructure of the complex
+              </h2>
+              <p class="mb-3">
+                The houses are designed in high-tech style with an emphasis on
+                intelligent and efficient use of space.
+              </p>
+              <p>
+                Reliable house designs are earthquake-resistant and comply with
+                all safety standards and requirements. The facades of the house,
+                modern in shape and color palette, combine the color of natural
+                pearls and gray anthracite.
+              </p>
+            </div>
+          </div>
+
+          <!-- card reverse-->
+          <div
+            class="flex justify-between flex-col-reverse md:flex-row bg-white"
+          >
+            <div
+              class="flex-1 pt-3 md:pt-0 md:pr-16 flex flex-col justify-center"
+            >
+              <h2 class="font-bold text-3xl mb-1.5 md:mb-3 lg:mb-6 xl:mb-9">
+                Improvement and infrastructure of the complex
+              </h2>
+              <p class="mb-3">
+                The houses are designed in high-tech style with an emphasis on
+                intelligent and efficient use of space.
+              </p>
+              <p>
+                Reliable house designs are earthquake-resistant and comply with
+                all safety standards and requirements. The facades of the house,
+                modern in shape and color palette, combine the color of natural
+                pearls and gray anthracite.
+              </p>
+            </div>
+            <div
+              class="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex-1"
+            >
+              <img
+                src="./imgs/1-why-urban-parking-lots-are-becoming-parks 1.png"
+                alt="durmon"
+                width="350"
+                height="350"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>

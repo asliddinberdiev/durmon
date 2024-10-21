@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Durmon avenue</title>
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,7 +95,7 @@
         <!-- logo -->
         <a href="/">
           <img
-            src="/imgs/logo-durmon.png"
+            src="/imgs/logo.png"
             alt="durmon logo"
             height="40"
             class="object-cover h-10"
@@ -105,23 +107,25 @@
           class="hidden md:flex items-center justify-between md:gap-x-14 lg:gap-x-16 xl:gap-x-24"
         >
           <li>
-            <a href="#" class="text-xl font-semibold uppercase text-text"
-              >About</a
+            <a
+              href="/"
+              class="text-xl font-semibold uppercase text-text hover:text-text transition-colors"
             >
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="text-xl font-semibold uppercase hover:text-text">
+              About
+            </a>
           </li>
           <li>
             <a
-              href="#"
+              href="#gallery"
               class="text-xl font-semibold uppercase hover:text-text transition-colors"
-              >Home</a
             >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-xl font-semibold uppercase hover:text-text transition-colors"
-              >Gallery</a
-            >
+              Gallery
+            </a>
           </li>
           <li>
             <button
@@ -154,13 +158,13 @@
       >
         <swiper-slide>
           <img
-            src="./imgs/Park-and-Garden-Luxury-Apartments.png"
+            src="./imgs/header1.png"
             alt="Park and Garden Luxury Apartments"
           />
         </swiper-slide>
         <swiper-slide>
           <img
-            src="./imgs/Park-and-Garden-Luxury-Apartments2.png"
+            src="./imgs/header2.png"
             alt="Park and Garden Luxury Apartments"
           />
         </swiper-slide>
@@ -171,13 +175,13 @@
       class="px-4 py-2 sm:px-12 sm:py-6 md:px-16 md:py-8 lg:px-20 lg:py-10 xl:px-24 xl:py-12"
     >
       <!-- section - about projects -->
-      <section>
+      <section id="about">
         <!-- title -->
-        <h1
-          class="uppercase bg-section w-max py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        <title
+          class="inline-block uppercase text-wrap bg-section py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
         >
           About the project
-        </h1>
+        </title>
 
         <!-- cards  -->
         <div
@@ -189,7 +193,7 @@
               class="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex-1"
             >
               <img
-                src="./imgs/1-why-urban-parking-lots-are-becoming-parks 1.png"
+                src="./imgs/about1.png"
                 alt="durmon"
                 width="350"
                 height="350"
@@ -235,7 +239,7 @@
               class="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex-1"
             >
               <img
-                src="./imgs/1-why-urban-parking-lots-are-becoming-parks 2.png"
+                src="./imgs/about2.png"
                 alt="durmon"
                 width="350"
                 height="350"
@@ -250,7 +254,7 @@
               class="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex-1"
             >
               <img
-                src="./imgs/1-why-urban-parking-lots-are-becoming-parks 3.png"
+                src="./imgs/about3.png"
                 alt="durmon"
                 width="350"
                 height="350"
@@ -299,7 +303,7 @@
               class="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex-1"
             >
               <img
-                src="./imgs/1-why-urban-parking-lots-are-becoming-parks 4.png"
+                src="./imgs/about4.png"
                 alt="durmon"
                 width="350"
                 height="350"
@@ -313,7 +317,7 @@
               class="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex-1"
             >
               <img
-                src="./imgs/1-why-urban-parking-lots-are-becoming-parks 5.png"
+                src="./imgs/about5.png"
                 alt="durmon"
                 width="350"
                 height="350"
@@ -341,14 +345,14 @@
         </div>
       </section>
 
-      <!-- section - our houses -->
-      <section class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+      <!-- section - our apartments -->
+      <section id="apartment" class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
         <!-- title -->
-        <h1
-          class="uppercase bg-section w-max py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        <title
+          class="inline-block uppercase text-wrap bg-section py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
         >
-          OUR HOUSES
-        </h1>
+          our apartments
+        </title>
         <!-- plan house  -->
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
@@ -548,17 +552,17 @@
       </section>
 
       <!-- section gallery -->
-      <section class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+      <section id="gallery" class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
         <!-- title -->
-        <h1
-          class="uppercase bg-section w-max py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        <title
+          class="inline-block uppercase text-wrap bg-section py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
         >
           Project Gallery
-        </h1>
+        </title>
         <!-- gallery cards  -->
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <!-- card youtube -->
-          <div class="md:col-span-2 h-60 md:h-64 xl:h-72">
+          <div class="sm:col-span-2 h-60 md:h-64 xl:h-72">
             <iframe
               class="h-full w-full"
               width="480"
@@ -634,7 +638,170 @@
           </div>
         </div>
       </section>
+
+      <!-- section address -->
+      <section class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+        <!-- title -->
+        <title
+          class="inline-block uppercase text-wrap bg-section py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        >
+          Residential building ZOE on the map
+        </title>
+
+        <!-- map -->
+        <iframe
+          src="https://yandex.uz/map-widget/v1/?ll=69.335656%2C41.341156&mode=search&oid=214624367297&ol=biz&z=16.34"
+          width="400"
+          height="400"
+          frameborder="0"
+          allowfullscreen="true"
+          class="w-full h-96 md:h-[440px] xl:h-[540px]"
+        ></iframe>
+      </section>
+
+      <!-- section banks -->
+      <section class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+        <!-- title -->
+        <title
+          class="inline-block uppercase text-wrap bg-section py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        >
+          Accreditation in leading banks
+        </title>
+
+        <!-- cards -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 xl:gap-12"
+        >
+          <!-- card1 -->
+          <div
+            class="h-72 flex items-center justify-center shadow-card hover:shadow-md hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="./imgs/bank_ipoteka.png"
+              alt="durmon and ipoteka bank"
+              width="200"
+              height="200"
+              class="w-52 h-52 object-fill"
+            />
+          </div>
+
+          <!-- card2 -->
+          <div
+            class="h-72 flex items-center justify-center shadow-card hover:shadow-md hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="./imgs/bank_kapital.png"
+              alt="durmon and kapital bank"
+              width="200"
+              height="200"
+              class="w-52 h-52 object-fill"
+            />
+          </div>
+
+          <!-- card3 -->
+          <div
+            class="h-72 flex items-center justify-center shadow-card hover:shadow-md hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="./imgs/bank_sqb.png"
+              alt="durmon and sqb bank"
+              width="200"
+              height="200"
+              class="w-52 h-52 object-fill"
+            />
+          </div>
+
+          <!-- card4 -->
+          <div
+            class="h-72 flex items-center justify-center shadow-card hover:shadow-md hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="./imgs/bank_nbu.png"
+              alt="durmon and nbu bank"
+              width="200"
+              height="200"
+              class="w-52 h-52 object-fill"
+            />
+          </div>
+
+          <!-- card5 -->
+          <div
+            class="h-72 flex items-center justify-center shadow-card hover:shadow-md hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <img
+              src="./imgs/bank_asaka.png"
+              alt="durmon and asaka bank"
+              width="200"
+              height="200"
+              class="w-52 h-52 object-fill"
+            />
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- footer -->
+    <footer
+      class="bg-white h-min px-4 py-7 sm:px-12 md:px-16 lg:px-20 xl:px-24 flex justify-between flex-col md:flex-row"
+    >
+      <!-- logo -->
+      <div
+        class="w-full mb-5 md:mb-0 flex flex-col justify-between items-center md:items-start"
+      >
+        <a href="/">
+          <img
+            src="./imgs/logo.png"
+            alt="durmon logo"
+            width="231"
+            height="52"
+            class="object-fill"
+          />
+        </a>
+        <p class="text-sm text-black/40 hidden md:block">
+          © All rights reserved.
+        </p>
+      </div>
+
+      <!-- data -->
+      <div
+        class="flex justify-between flex-col md:flex-row md:ml-4 sm:flex-row gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20"
+      >
+        <!-- about -->
+        <div>
+          <h2 class="font-medium text-xl mb-4 uppercase text-nowrap">
+            About the project
+          </h2>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a href="#apartment" class="uppercase"> Apartments </a>
+            </li>
+            <li>
+              <a href="#gallery" class="uppercase"> Gallery </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- contact -->
+        <div>
+          <h2 class="font-medium text-xl mb-4 uppercase">CONTACTS</h2>
+          <p>
+            <span class="uppercase text-nowrap">Sales department phone:</span>
+            <br />
+            <a href="tel:+998901202124">+998 90 120 2124</a>
+          </p>
+
+          <p class="uppercase">
+            <span>Opening hours: Mon-Fri</span>
+            <br />
+            <span>from 09:00 to 18:00</span>
+          </p>
+        </div>
+      </div>
+
+      <p class="text-sm text-black/40 block md:hidden text-center mt-3">
+        © All rights reserved.
+      </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>

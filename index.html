@@ -154,7 +154,7 @@
 
       <!-- swiper carousel -->
       <swiper-container
-        class="mySwiper"
+        class="headerCarousel"
         pagination="true"
         pagination-clickable="true"
         navigation="true"
@@ -664,6 +664,97 @@
         </div>
       </section>
 
+      <!-- section steps -->
+      <section id="steps" class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+        <!-- title -->
+        <h1
+          class="inline-block uppercase text-wrap bg-section py-2 font-bold text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        >
+          5 Easy Steps to Buying an Apartment
+        </h1>
+        <!-- swiper carousel -->
+        <swiper-container
+          class="stepsCarousel"
+          slides-per-view="1"
+          space-between="30"
+          loop="true"
+        >
+          <swiper-slide>
+            <!-- card -->
+            <div
+              class="flex items-center justify-between flex-col-reverse md:flex-row"
+            >
+              <!-- card data -->
+              <div class="md:w-3/5 text-start">
+                <!-- card title -->
+                <h3 class="font-semibold text-xl">1. Appointment</h3>
+                <p class="font-medium text-xl text-black/60">
+                  You can preview the projects on our website, social media
+                  pages, or order a call back right away. A personal manager
+                  will contact you by phone or Telegram messenger and set a
+                  meeting time at the sales office.
+                </p>
+              </div>
+
+              <!-- card img -->
+              <div class="md:w-2/5">
+                <img
+                  src="./imgs/steps1.png"
+                  alt="durmon avenue buy step 1"
+                  width="200"
+                  height="200"
+                  class="min-w-60 lg:w-[450px] min-h-60 lg:h-[450px] object-fill"
+                />
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <!-- card -->
+            <div
+              class="flex items-center justify-between flex-col-reverse md:flex-row"
+            >
+              <!-- card data -->
+              <div class="md:w-3/5 text-start">
+                <!-- card title -->
+                <h3 class="font-semibold text-xl">2. Appointment</h3>
+                <p class="font-medium text-xl text-black/60">
+                  You can preview the projects on our website, social media
+                  pages, or order a call back right away. A personal manager
+                  will contact you by phone or Telegram messenger and set a
+                  meeting time at the sales office.
+                </p>
+              </div>
+
+              <!-- card img -->
+              <div class="md:w-2/5">
+                <img
+                  src="./imgs/steps2.png"
+                  alt="durmon avenue buy step 2"
+                  width="200"
+                  height="200"
+                  class="min-w-60 lg:w-[450px] min-h-60 lg:h-[450px] object-fill"
+                />
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+
+        <!-- action btns -->
+        <div class="text-center pt-3 md:text-start md:pt-0">
+          <button
+            class="steps_btn-prev border rounded-full w-8 h-8 border-black/60 hover:bg-primary hover:border-white transition duration-300 ease-in-out mr-5"
+          >
+            <
+          </button>
+          <button
+            class="steps_btn-next border rounded-full w-8 h-8 border-black/60 hover:bg-primary hover:border-white transition duration-300 ease-in-out"
+          >
+            >
+          </button>
+        </div>
+      </section>
+
       <!-- section address -->
       <section class="mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
         <!-- title -->
@@ -834,6 +925,7 @@
       </p>
     </footer>
 
+    <script src="./plugins/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

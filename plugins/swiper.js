@@ -1,9 +1,7 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+const swiperEl = document.querySelector(".stepsCarousel")
+const btnPrev = document.querySelector(".steps_btn-prev")
+const btnNext = document.querySelector(".steps_btn-next")
 
-const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
-});
+btnPrev.addEventListener("click", () => swiperEl.swiper.slidePrev())
+
+btnNext.addEventListener("click", () => swiperEl.swiper.slideNext())

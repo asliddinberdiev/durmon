@@ -1,7 +1,7 @@
-const swiperEl = document.querySelector(".stepsCarousel")
-const btnPrev = document.querySelector(".steps_btn-prev")
-const btnNext = document.querySelector(".steps_btn-next")
+// swiper for steps
+const stepsSwiper = document.querySelector(".stepsCarousel")
+const stepsBtnPrev = document.querySelector(".steps_btn-prev")
+const stepsBtnNext = document.querySelector(".steps_btn-next")
 
-btnPrev.addEventListener("click", () => swiperEl.swiper.slidePrev())
-
-btnNext.addEventListener("click", () => swiperEl.swiper.slideNext())
+stepsBtnPrev.addEventListener("click", () => stepsSwiper.swiper.slidePrev())
+stepsBtnNext.addEventListener("click", () => stepsSwiper.swiper.slideNext())

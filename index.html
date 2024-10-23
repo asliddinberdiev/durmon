@@ -152,28 +152,80 @@
         </div>
       </nav>
 
-      <!-- swiper carousel -->
-      <swiper-container
-        class="headerCarousel"
-        pagination="true"
-        pagination-clickable="true"
-        navigation="true"
-        space-between="30"
-        loop="true"
-      >
-        <swiper-slide>
-          <img
-            src="./imgs/header1.png"
-            alt="Park and Garden Luxury Apartments"
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            src="./imgs/header2.png"
-            alt="Park and Garden Luxury Apartments"
-          />
-        </swiper-slide>
-      </swiper-container>
+      <div class="relative w-full h-full">
+        <!-- swiper carousel -->
+        <swiper-container
+          class="headerCarousel"
+          navigation="true"
+          pagination="true"
+          pagination-clickable="true"
+          loop="true"
+          speed="1500"
+          autoplay-delay="3000"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide>
+            <img
+              src="./imgs/header1.png"
+              alt="Park and Garden Luxury Apartments"
+            />
+            <!-- black shadow content -->
+            <div
+              class="bg-black/40 w-full h-full absolute top-0 left-0 flex flex-col gap-12 justify-center items-start px-12 sm:px-16 lg:px-20 xl:px-24"
+            >
+              <h3
+                class="text-start font-extrabold text-2xl md:text-4xl text-white-dark"
+              >
+                “Home is where you find happiness”
+              </h3>
+
+              <p
+                class="max-w-3xl text-start font-semibold text-xl md:text-2xl leading-10 text-white-dark"
+              >
+                The houses are designed in high-tech style with an emphasis on
+                intelligent and efficient use of space.
+              </p>
+
+              <button
+                type="button"
+                class="bg-primary px-7 py-1.5 rounded-3xl font-medium hover:text-white transition-colors duration-300 ease-in-out"
+              >
+                Choose an apartment
+              </button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <img
+              src="./imgs/header2.png"
+              alt="Park and Garden Luxury Apartments"
+            />
+            <div
+              class="bg-black/30 w-full h-full absolute top-0 left-0 flex flex-col gap-12 justify-center items-start px-12 sm:px-16 lg:px-20 xl:px-24"
+            >
+              <h3
+                class="text-start font-extrabold text-2xl md:text-4xl text-white-dark"
+              >
+                Residential building ZOE 5 minutes from Oktyabrskaya metro
+                station
+              </h3>
+
+              <p
+                class="max-w-3xl text-start font-semibold text-xl md:text-2xl leading-10 text-white-dark"
+              >
+                Comfort class house in the business center of Novosibirsk from
+                130,000 rubles/sq.m.
+              </p>
+
+              <button
+                type="button"
+                class="bg-primary px-7 py-1.5 rounded-3xl font-medium hover:text-white transition-colors duration-300 ease-in-out"
+              >
+                Choose an apartment
+              </button>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
     </header>
 
     <!-- sections -->
@@ -675,20 +727,29 @@
         <!-- swiper carousel -->
         <swiper-container
           class="stepsCarousel"
+          effect="cube"
           slides-per-view="1"
-          space-between="30"
           loop="true"
+          speed="2500"
+          autoplay-delay="3000"
+          autoplay-disable-on-interaction="false"
         >
           <swiper-slide>
             <!-- card -->
             <div
-              class="flex items-center justify-between flex-col-reverse md:flex-row"
+              class="bg-main flex items-center justify-between flex-col-reverse md:flex-row"
             >
               <!-- card data -->
               <div class="md:w-3/5 text-start">
                 <!-- card title -->
-                <h3 class="font-semibold text-xl">1. Appointment</h3>
-                <p class="font-medium text-xl text-black/60">
+                <h3
+                  class="font-semibold text-xl line-clamp-1 lg:line-clamp-none"
+                >
+                  1. Appointment
+                </h3>
+                <p
+                  class="font-medium text-xl text-black/60 line-clamp-3 lg:line-clamp-none"
+                >
                   You can preview the projects on our website, social media
                   pages, or order a call back right away. A personal manager
                   will contact you by phone or Telegram messenger and set a
@@ -703,7 +764,7 @@
                   alt="durmon avenue buy step 1"
                   width="200"
                   height="200"
-                  class="min-w-60 lg:w-[450px] min-h-60 lg:h-[450px] object-fill"
+                  class="w-60 lg:w-[450px] h-60 lg:h-[450px] object-fill"
                 />
               </div>
             </div>
@@ -712,17 +773,24 @@
           <swiper-slide>
             <!-- card -->
             <div
-              class="flex items-center justify-between flex-col-reverse md:flex-row"
+              class="bg-main flex items-center justify-between flex-col-reverse md:flex-row"
             >
               <!-- card data -->
               <div class="md:w-3/5 text-start">
                 <!-- card title -->
-                <h3 class="font-semibold text-xl">2. Appointment</h3>
-                <p class="font-medium text-xl text-black/60">
-                  You can preview the projects on our website, social media
-                  pages, or order a call back right away. A personal manager
-                  will contact you by phone or Telegram messenger and set a
-                  meeting time at the sales office.
+                <h3
+                  class="font-semibold text-xl line-clamp-1 lg:line-clamp-none"
+                >
+                  2. Selecting an apartment to buy
+                </h3>
+                <p
+                  class="font-medium text-xl text-black/60 line-clamp-3 lg:line-clamp-none"
+                >
+                  At the sales office, our specialist will provide you with
+                  complete information on all the projects that interest you: he
+                  will check the availability of apartments and their prices,
+                  select the appropriate layouts and apartment options that are
+                  right for you.
                 </p>
               </div>
 
@@ -733,7 +801,113 @@
                   alt="durmon avenue buy step 2"
                   width="200"
                   height="200"
-                  class="min-w-60 lg:w-[450px] min-h-60 lg:h-[450px] object-fill"
+                  class="w-60 lg:w-[450px] h-60 lg:h-[450px] object-fill"
+                />
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <!-- card -->
+            <div
+              class="bg-main flex items-center justify-between flex-col-reverse md:flex-row"
+            >
+              <!-- card data -->
+              <div class="md:w-3/5 text-start">
+                <!-- card title -->
+                <h3
+                  class="font-semibold text-xl line-clamp-1 lg:line-clamp-none"
+                >
+                  3. Collection of documents
+                </h3>
+                <p
+                  class="font-medium text-xl text-black/60 line-clamp-3 lg:line-clamp-none"
+                >
+                  As soon as you choose a suitable apartment, you will be
+                  provided with a purchase and sale agreement for review, for
+                  the preparation of which you only need a passport and TIN.
+                </p>
+              </div>
+
+              <!-- card img -->
+              <div class="md:w-2/5">
+                <img
+                  src="./imgs/steps3.png"
+                  alt="durmon avenue buy step 3"
+                  width="200"
+                  height="200"
+                  class="w-60 lg:w-[450px] h-60 lg:h-[450px] object-fill"
+                />
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <!-- card -->
+            <div
+              class="bg-main flex items-center justify-between flex-col-reverse md:flex-row"
+            >
+              <!-- card data -->
+              <div class="md:w-3/5 text-start">
+                <!-- card title -->
+                <h3
+                  class="font-semibold text-xl line-clamp-1 lg:line-clamp-none"
+                >
+                  4. Signing and payment of the contract
+                </h3>
+                <p
+                  class="font-medium text-xl text-black/60 line-clamp-3 lg:line-clamp-none"
+                >
+                  After signing the agreement, if necessary, our employee will
+                  take you to the bank, where you can make payment under the
+                  agreement by depositing funds through the bank’s cash desk or
+                  paying through the Internet banking system.
+                </p>
+              </div>
+
+              <!-- card img -->
+              <div class="md:w-2/5">
+                <img
+                  src="./imgs/steps4.png"
+                  alt="durmon avenue buy step 4"
+                  width="200"
+                  height="200"
+                  class="w-60 lg:w-[450px] h-60 lg:h-[450px] object-fill"
+                />
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <!-- card -->
+            <div
+              class="bg-main flex items-center justify-between flex-col-reverse md:flex-row"
+            >
+              <!-- card data -->
+              <div class="md:w-3/5 text-start">
+                <!-- card title -->
+                <h3
+                  class="font-semibold text-xl line-clamp-1 lg:line-clamp-none"
+                >
+                  5. Delivery of the house and registration of ownership
+                </h3>
+                <p
+                  class="font-medium text-xl text-black/60 line-clamp-3 lg:line-clamp-none"
+                >
+                  After successful registration of the contract, you can receive
+                  ownership documents and keys to your new apartment. At this
+                  stage, you become the legal owner of your home!
+                </p>
+              </div>
+
+              <!-- card img -->
+              <div class="md:w-2/5">
+                <img
+                  src="./imgs/steps5.png"
+                  alt="durmon avenue buy step 5"
+                  width="200"
+                  height="200"
+                  class="w-60 lg:w-[450px] h-60 lg:h-[450px] object-fill"
                 />
               </div>
             </div>
@@ -741,16 +915,16 @@
         </swiper-container>
 
         <!-- action btns -->
-        <div class="text-center pt-3 md:text-start md:pt-0">
+        <div class="text-center mt-8 md:text-start">
           <button
-            class="steps_btn-prev border rounded-full w-8 h-8 border-black/60 hover:bg-primary hover:border-white transition duration-300 ease-in-out mr-5"
+            class="steps_btn-prev group border rounded-full w-8 h-8 border-black/60 hover:bg-primary hover:border-white transition duration-300 ease-in-out mr-5"
           >
-            <
+            <span class="group-hover:text-white"> < </span>
           </button>
           <button
-            class="steps_btn-next border rounded-full w-8 h-8 border-black/60 hover:bg-primary hover:border-white transition duration-300 ease-in-out"
+            class="steps_btn-next group border rounded-full w-8 h-8 border-black/60 hover:bg-primary hover:border-white transition duration-300 ease-in-out"
           >
-            >
+            <span class="group-hover:text-white"> > </span>
           </button>
         </div>
       </section>
